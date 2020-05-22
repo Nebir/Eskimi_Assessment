@@ -1,0 +1,159 @@
+/*
+========================== 
+		Custom Font 
+==========================
+*/
+
+@font-face {
+    font-family: 'kongshomjbold';
+    src: url("../fonts/ko2/KongshoMJ Bold.ttf") format('true-type'),
+    	 url("../fonts/ko2/kongshomj_bold-webfont.woff2") format('woff2'),
+         url("../fonts/ko2/kongshomj_bold-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kongshomjbold';
+    src: url("../fonts/ko1/KongshoMJ-Bold.ttf") format('true-type'),
+    	 url("../fonts/ko1/kongshomj-bold-webfont.woff2") format('woff2'),
+         url("../fonts/ko1/kongshomj-bold-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+========================== 
+		Global 
+==========================
+*/
+
+body {
+	font-family: 'kongshomjbold', sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.ad-container {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../images/bongo_bondhu_bg.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.ad-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(133,209,205,1) 100%);
+}
+
+.ad-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+/*
+========================== 
+	Initial Stage 
+==========================
+*/
+
+#instructionText {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+#instructionText{
+	animation-delay: 1200ms;
+	animation-iteration-count: infinite;
+}
+
+.green-text {
+	color: #006a4e;
+}
+
+.red-text {
+	color: #f42a41;
+}
+
+#developmentIcons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+img.icon {
+    margin-right: 20px;
+}
+
+#developmentIcons .icon:nth-child(1){
+	animation-delay: 250ms;
+}
+
+#developmentIcons .icon:nth-child(2){
+	animation-delay: 500ms;
+}
+
+#developmentIcons .icon:nth-child(3){
+	animation-delay: 750ms;
+}
+
+#developmentIcons .icon:nth-child(4){
+	animation-delay: 1000ms;
+}
+
+/*
+========================== 
+	After Stage 
+==========================
+*/
+
+.ad-overlay.overlay-bg {
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(70, 183, 177) 100%);
+}
+
+.final-text {
+    position: absolute;
+    display: inline;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -65%) rotateZ(-6deg);
+}
+
+.t1, .t2, .t3 {
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1px 6px;
+    opacity: 0;
+    transform: skewX(-12deg);
+    width: max-content;
+    font-size: 15px;
+}
+
+.t1 {
+	background-color: #006a4e;
+	margin-left: -190px;
+}
+
+.t2 {
+	background-color: #f42a41;
+	font-size: 19px;
+	margin-left: 155px;
+}
+
+.t3 {
+	background-color: #006a4e;
+	display: inline-block;
+}
